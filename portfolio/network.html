@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <!-- Box Icons -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+        <title>Kana Iwasa Portfolio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../index.html#about" class="nav-logo">Kana Iwasa</a>
+                </div>
+                <div class="nav-menu" id="nav_menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="../index.html#portfolio" class="nav-link">Portfolio</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav_toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main">
+            
+            <!-- project -->
+            <section class="project section" id="project">
+                <h2 class="section-title">2021/06 ネットワーク構築
+                </h2>
+                <div class="project-container bd-grid">
+             
+                  <video src="img/net/network_top.mp4" controls muted autoplay playinline loop ></video>
+                  
+                  <h2 class="project-subtitle"><p>クライアント機からサーバー機のwebページを閲覧
+                  </p></h2>
+                  <span class="project-profession">
+                    <p>
+                      OS:CentOS<br>
+                      PC2機ではなくバーチャルマシン２機で実施(VirtualBox)<br>
+                      クライアント機からサーバー機のwebページを閲覧可能となるネットワークを構築
+                    </p>
+                  </span>
+                    
+                  <p class="project-text"><h3>内容</h3>仮想マシンを2機用意しOSをインストール<br>
+                    Server機Client機を一機ずつ用意します
+                  </p> 
+                  <img src="img/net/net0.jpeg" alt="project Image">
+
+                  <p class="project-text"><h3>ネットワーク設定</h3>Server機アドレス：192.168.2.1　Client機アドレス：192.168.2.2　とします</p>
+                  <img src="img/net/net1.jpeg" alt="project Image">
+
+                  <p class="project-text"><h3>現状確認</h3>今の段階でClient機からホームページを閲覧できないことを確認します</p>
+                  <img src="img/net/net2.jpeg" alt="project Image">
+
+                  <p class="project-text"><h3>メディアの名前確認</h3>catコマンドでc7メディアの名前を確認します</p>
+                  <img src="img/net/net3.jpeg" alt="project Image">
+
+                  <p class="project-text"><h3>HTTPサーバーのインストールの準備</h3>CentOSをマウントし、lnコマンドでリンクの作成、lsコマンドでリンクの確認をします</p>
+                  <img src="img/net/net4.jpeg" alt="project Image">
+
+                  <p class="project-text"><h3>HTTPサーバーのインストール</h3>yumコマンドでHTTPサーバーをインストールします</p>
+                  <img src="img/net/net5.jpeg" alt="project Image">
+
+                  <p class="project-text"><h3>HTTPサーバーの起動、状態確認</h3>systemctlコマンドで起動、statusで状態確認をします</p>
+                  <img src="img/net/net6.jpeg" alt="project Image">
+
+                  <p class="project-text"><h3>firewallの確認、停止</h3>systemctlコマンドで状態を確認し、停止させた後再度ステータスを確認</p>
+                  <img src="img/net/net7.jpeg" alt="project Image">
+
+                  <p class="project-text"><h3>通信確認</h3>Client機の更新ボタンをクリックしアパッチテストページが表示されることを確認します</p>
+                  <img src="img/net/net8.jpeg" alt="project Image">
+
+                </div>
+            </section>
+            
+        </main>
+        <!-- Footer -->
+        <footer class="footer section">
+            <div class="footer-container bd-grid">
+                <div class="footer-data">
+                    <h2 class="footer-title">Kana Iwasa</h2>
+                    <p class="footer-text">現在、webを中心に学習中。以前はアイラッシュデザイナーをしていました。</p>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="../index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="../index.html#about" class="footer-link">About</a></li>
+                        <li><a href="../index.html#skills" class="footer-link">Skills</a></li>
+                        <li><a href="../index.html#portfolio" class="footer-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">FOLLOW</h2>
+                    <div class="footer-icons">
+                      <a href="https://twitter.com/mememeeeco" target="blank" class="footer-social"><i class='bx bxl-twitter' ></i></a>
+                      <a href="https://www.instagram.com/oneplate_beauty/" target="blank" class="footer-social"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS -->
+        <script src="assets/js/main.js"></script>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+</html>

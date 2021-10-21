@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <!-- Box Icons -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+        <title>Kana Iwasa Portfolio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../index.html#about" class="nav-logo">Kana Iwasa</a>
+                </div>
+                <div class="nav-menu" id="nav_menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="../index.html#portfolio" class="nav-link">Portfolio</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav_toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main">
+            
+            <!-- project -->
+            <section class="project section" id="project">
+                <h2 class="section-title">2021/04 ブラウザからLEDをON/OFF /C言語
+                </h2>
+                <div class="project-container bd-grid">
+                    <video src="img/iot/iot_3.8.mov" controls muted autoplay playinline loop ></video>
+                    <h2 class="project-subtitle"><p>ArduinoとESP-WROOM-02を使用してインターネット経由でLEDをコントロール<br>
+                    </p></h2>
+                    <span class="project-profession">
+                        <p>                        
+                            言語 : C言語<br>
+                            制作期間：2ヶ月<br>
+                            部品等 : Arduino Uno R3、ESP-WROOM-02、ロジックレベル変換モジュール、低損失三端子レギュレーター 、コンデンサ、抵抗、LED、ジャンパー線など<br>
+                            ライブラリ：ITEADLIB_Arduino_WeeESP8266<br>
+                            サーバー：XServer、github.io
+                        </p>
+                    </span>
+                    
+                    <p class="project-text"><h3>概要</h3>ATコマンドで通信速度を設定します<br>
+                        ArduinoにESP-WROOM-02をWi-Fiモジュールとしてシリアル通信で接続します
+                    </p>
+                    <img src="img/iot/iot0.jpeg" alt="project Image">
+                    <p class="project-text">
+                        <br>
+                        Webブラウザをタップすることにより、ON/OFF情報がPHPへ送信され保存されます<br>
+                        その値をArduinoから200ミリ秒ごとに取得し、ONならLEDを点灯させます
+                    </p>
+                    <img src="img/iot/iot1.jpeg" alt="project Image">
+                    <p class="project-text"><br><h3>問題点</h3>
+                        一応webブラウザからLEDのON/OFFをコントロールできましたが、ブラウザでボタンを押してからLEDが反応するまで<br>
+                        40秒ほどかかり原因を見つけられませんでした<br>
+                        問題なく動作すればほかの回路と組み合わせたかったのですがここで一旦別の学習に移りました
+                    </p>
+                    <p class="project-text"><br><h3>困ったこと</h3>
+                        ネットの記事を参考に実験しましたがESP-WROOM-02は同じ変換基盤が入手できず、別のものを使用したところ<br>
+                        裏で施されている処理が異なりそれに気づくまでに時間がかかりました
+                    </p>                  
+                </div>
+            </section>
+            
+        </main>
+        <!-- Footer -->
+        <footer class="footer section">
+            <div class="footer-container bd-grid">
+                <div class="footer-data">
+                    <h2 class="footer-title">Kana Iwasa</h2>
+                    <p class="footer-text">現在、webを中心に学習中。以前はアイラッシュデザイナーをしていました。</p>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="../index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="../index.html#about" class="footer-link">About</a></li>
+                        <li><a href="../index.html#skills" class="footer-link">Skills</a></li>
+                        <li><a href="../index.html#portfolio" class="footer-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">FOLLOW</h2>
+                    <div class="footer-icons">
+                        <a href="https://twitter.com/mememeeeco" target="blank" class="footer-social"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.instagram.com/oneplate_beauty/" target="blank" class="footer-social"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS -->
+        <script src="assets/js/main.js"></script>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+</html>

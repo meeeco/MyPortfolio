@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <!-- Box Icons -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+        <title>Kana Iwasa Portfolio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../index.html#about" class="nav-logo">Kana Iwasa</a>
+                </div>
+                <div class="nav-menu" id="nav_menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="../index.html#portfolio" class="nav-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav_toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main">
+            
+            <!-- project -->
+            <section class="project section" id="project">
+                <h2 class="section-title">2021/02 RPGゲームのワンシーン作成 / c#
+                </h2>
+                <div class="project-container bd-grid">
+                  <video src="img/rpg/rpg_s.mov" controls muted autoplay playinline loop ></video>
+                  <h2 class="project-subtitle"><p>UnityでRPG風ゲームシーンを制作しました</p></h2>
+                  <span class="project-profession">
+                    <p>
+                      editor : Unity<br>
+                      言語 : C#<br>
+                      制作期間：１ヶ月半
+                    </p>
+                  </span>
+                    
+                  <p class="project-text"><h3>機能</h3>初期画面
+                  </p>                      
+                  <img src="img/rpg/rpg0.jpeg" alt="project Image">                      
+                  <p class="project-text">
+                    岩、床、扉などのアセットをインポートし、配置しました<br>
+                    Animator Controller、Collider 、c#により近づくと扉が開き離れると閉じます
+                  </p>
+
+                  <p class="project-text"><br><h3>宝箱のアイテムのゲット1
+                  </h3></p>
+                  <img src="img/rpg/rpg1.jpeg" alt="project Image">
+                     
+                  <p class="project-text">
+                    宝箱のアセットをインポートし配置しました<br>
+                    Animator Controller、Collider 、c#、Particle System により宝箱に近づくと蓋が開き鍵とパーティクルが現れます<br>
+                    Collider 、c#により触れると鍵とパーティクルが消えます
+                  </p>
+                  <p class="project-text"><br><h3>宝箱のアイテムのゲット2
+                  </h3></p>
+                      
+                  <img src="img/rpg/rpg2.jpeg"alt="project Image">            
+                  <p class="project-text">
+                    左の宝箱は色違いの鍵が入っています<br>
+                    c#により鍵に触れた（鍵を獲得した）ことを記録します
+                  </p>
+                  <p class="project-text"><br><h3>二つ目の扉</h3>
+                  </p>   
+                  <img src="img/rpg/rpg3.jpeg" alt="project Image">          
+                  <p class="project-text">
+                    二つの鍵を取得し扉に近づくことでと開きます<br>
+                    c#により鍵をいくつ所持しているか判定しています
+                  </p>
+                  <p class="project-text"><br><h3>敵を攻撃</h3>
+                  </p>    
+                  <img src="img/rpg/rpg4.jpeg" alt="project Image">
+                  <p class="project-text">
+                    剣、攻撃アニメーション、恐竜のアセットをインポートして配置しました<br>
+                    敵に近づき[shift]+[control]を押すと剣を振りかざします<br>
+                    剣と恐竜にColliderをつけc#で衝突時の処理を指示します<br>
+                    剣が当たると恐竜のHPが減ります
+                  </p>
+
+                  <p class="project-text"><br><h3>敵を倒す</h3></p>    
+                  <img src="img/rpg/rpg5.jpeg" alt="project Image">    
+                  <p class="project-text">
+                    剣が当たるたびに敵のHPが50ずつ減っていき0になると倒れます
+                  </p>
+                  
+                </div>
+            </section>
+            
+        </main>
+        <!-- Footer -->
+        <footer class="footer section">
+            <div class="footer-container bd-grid">
+                <div class="footer-data">
+                    <h2 class="footer-title">Kana Iwasa</h2>
+                    <p class="footer-text">現在、webを中心に学習中。以前はアイラッシュデザイナーをしていました。</p>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="../index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="../index.html#about" class="footer-link">About</a></li>
+                        <li><a href="../index.html#skills" class="footer-link">Skills</a></li>
+                        <li><a href="../index.html#portfolio" class="footer-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">FOLLOW</h2>
+                    <div class="footer-icons">
+                      <a href="https://twitter.com/mememeeeco" target="blank" class="footer-social"><i class='bx bxl-twitter' ></i></a>
+                      <a href="https://www.instagram.com/oneplate_beauty/" target="blank" class="footer-social"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS -->
+        <script src="assets/js/main.js"></script>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <!-- Box Icons -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+        <title>Kana Iwasa Portfolio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../index.html#about" class="nav-logo">Kana Iwasa</a>
+                </div>
+                <div class="nav-menu" id="nav_menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="../index.html#portfolio" class="nav-link">Portfolio</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav_toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main">
+            
+            <!-- project -->
+            <section class="project section" id="project">
+                <h2 class="section-title">2021/02 web/シーケンス制御
+                </h2>
+                <div class="project-container bd-grid">
+                   
+                    <video src="img/plc/plc_s.mov"controls muted autoplay playinline loop ></video>
+                  
+                    
+                    <h2 class="project-subtitle"><p>ラダープログラミングによるシーケンス制御<br>
+                        HTML/CSSによるPLCコントロール、モニタリングページ作成</p></h2>
+                    <span class="project-profession">
+                        <p>
+                            editor : GX Works3、Atom<br>
+                            言語 : ラダープログラミング、HTML、 CSS<br>
+                            機材 : 三菱シーケンサ電源ユニットR62P、CPUユニット、入力ユニット、実習機材<br>
+                            制作期間：2週間
+                        </p>
+                    </span>
+                      
+                    <p class="project-text"><h3>概要</h3></p>
+                       
+                    <img src="img/plc/plc0.jpeg" alt="project Image">
+                       
+                    <p class="project-text">
+                        右上のラダープログラミングにより左下の実習機材の押しボタンやベルトコンベアの端にあるリミットスイッチに信号が入った時の処理内容を命令<br>
+                        実際の動きとしては、モーターの回転により緑のベルトコンベアが始動すると四角い鉄が右に運ばれ、右端で折り返し左端で18秒停止し右へ動き出す動作を繰り返します<br>
+                        右端に到達した回数をカウントします<br>                        
+                        実習機材の押しボタンスイッチ、リミットスイッチなどの制御とモニタリングができるwebページを作成しました(左上)
+                    </p>
+                    <p class="project-text"><h3>工夫した点</h3>①モーターの動作中と停止中がひと目で判断できるようにRUNとSTOPの素材を用意し表示しました</p>
+                       
+                    <img src="img/plc/plc2.jpeg" alt="project Image"><br>
+                      
+                    <p class="project-text">
+                        ②STOP中は内部タイマの状態を確認できるように数値、グラフ、ゲージを表示しました
+                    </p>
+                    <div class="project-img2">
+                        <img src="img/plc/plc_k2_1.jpeg" alt="project Image"><br>
+                        <img src="img/plc/plc_k2_2.jpeg" alt="project Image"><br>
+                        <img src="img/plc/plc_k2_3.jpeg" alt="project Image">
+                    </div>
+                    <p class="project-text"><br><h3>改善点
+                    </h3></p>
+                    <p class="project-text">
+                        システムの都合上、実際の実習機材の動作とモニタリングページの情報にタイムラグが生じました<br>
+                        グラフの線が見にくいため色使いや太さを工夫すると良かったです
+                    </p>
+                </div>
+            </section>
+            
+        </main>
+        <!-- Footer -->
+        <footer class="footer section">
+            <div class="footer-container bd-grid">
+                <div class="footer-data">
+                    <h2 class="footer-title">Kana Iwasa</h2>
+                    <p class="footer-text">現在、webを中心に学習中。以前はアイラッシュデザイナーをしていました。</p>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="../index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="../index.html#about" class="footer-link">About</a></li>
+                        <li><a href="../index.html#skills" class="footer-link">Skills</a></li>
+                        <li><a href="../index.html#portfolio" class="footer-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">FOLLOW</h2>
+                    <div class="footer-icons">
+                        <a href="https://twitter.com/mememeeeco" target="blank" class="footer-social"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.instagram.com/oneplate_beauty/" target="blank" class="footer-social"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS -->
+        <script src="assets/js/main.js"></script>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+</html>

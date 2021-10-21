@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <!-- Box Icons -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/sheep_cheek_icon.jpeg">
+        <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+
+        <title>Kana Iwasa Portfolio</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="../index.html#about" class="nav-logo">Kana Iwasa</a>
+                </div>
+                <div class="nav-menu" id="nav_menu">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html#home" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="../index.html#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="../index.html#portfolio" class="nav-link">Portfolio</a></li>
+                       
+                    </ul>
+                </div>
+                <div class="nav-toggle" id="nav_toggle">
+                    <i class="bx bx-menu"></i>
+                </div>
+            </nav>
+        </header>
+        <main class="l-main">
+            
+            <!-- project -->
+            <section class="project section" id="project">
+                <h2 class="section-title">2021/09  ARリップメイクアプリ / c#
+                </h2>
+                <div class="project-container bd-grid">
+                    <video src="img/unity/unityARtop.mov" controls muted autoplay playinline loop ></video>
+                    <h2 class="project-subtitle"><p>リップの色を変更できるiOSアプリ</p></h2>
+                    <span class="project-profession">
+                        <p>
+                            editor : Unity<br>
+                            言語 : C#<br>
+                            端末 : iphoneSE2<br>
+                            制作期間：１ヶ月半
+                        </p>
+                    </span>
+                    
+                    <p class="project-text"><h3>概要</h3>書籍やネットの記事を参考に作成しました<br>
+                        ARKitFaceTrackingを使用し顔を追跡<br>
+                        マテリアルの色をスライダーで変更することでリップの色を様々な色や透明度にできます
+                    </p>
+                    
+                    <img src="img/unity/unityarhikaku.png" alt="project Image">
+
+                    <p class="project-text"><br><h3>工夫したところ</h3>
+                        はじめはRGBのみスライダーで変更できる仕様にしました<br>
+                        試してみるとお化粧においては透明度も重要であると感じalphaを調節するスライダーを一番下に加えました
+                    </p>
+
+                    <video src="img/unity/unityARalpha.mov" controls muted autoplay playinline loop ></video>
+
+                    <p><br>はじめはデフォルトの照明だけを使用していたので右の動画のように唇に影が濃く出ていました<br>
+                        唇の部分に正面からスポットライトを当てることで左の動画のように改善しました<br>
+                        　↓ spotlight：ON 　　　　　　　　　　↓ spotlight：OFF
+                    </p>
+                    <video src="img/unity/unityARlight.mov" controls muted autoplay playinline loop ></video>
+                    <p class="project-text"><br><h3>改善点</h3>
+                        よく見ると唇の形があっておらず不自然になってしまいました<br>
+                        今後もう少しフィットさせる方法を探していきたいです
+                    </p>
+                </div>
+            </section>
+            
+        </main>
+        <!-- Footer -->
+        <footer class="footer section">
+            <div class="footer-container bd-grid">
+               
+                <div class="footer-data">
+                    <h2 class="footer-title">Kana Iwasa</h2>
+                    <p class="footer-text">現在、webを中心に学習中。以前はアイラッシュデザイナーをしていました。</p>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="../index.html#home" class="footer-link">Home</a></li>
+                        <li><a href="../index.html#about" class="footer-link">About</a></li>
+                        <li><a href="../index.html#skills" class="footer-link">Skills</a></li>
+                        <li><a href="../index.html#portfolio" class="footer-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-data">
+                    <h2 class="footer-title">FOLLOW</h2>
+                    <div class="footer-icons">
+                        <a href="https://twitter.com/mememeeeco" target="blank" class="footer-social"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.instagram.com/oneplate_beauty/" target="blank" class="footer-social"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JS -->
+        <script src="assets/js/main.js"></script>
+        <!-- Scroll Reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+</html>
